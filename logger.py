@@ -6,7 +6,7 @@ from therm import read_temp
 log_file = "/var/www/html/temp_data.dat"
 
 def email_notify(temp):
-    passwd = "7CHpdOk6rDo8"
+    
 
     mail_to = "albert.t.xu@gmail.com"
     mail_from = "albert.t.xu@gmail.com"
