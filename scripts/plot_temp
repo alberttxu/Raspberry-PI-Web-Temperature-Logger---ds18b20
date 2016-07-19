@@ -1,0 +1,14 @@
+#!/usr/bin/gnuplot
+set terminal png size 800,600 font 'Arial,12'
+set output "/var/www/html/temp.png"
+unset key
+set title "Temperature: `date '+%Y-%m-%d'`"
+set xlabel "Time"
+set ylabel "Celcius"
+set yrange [20:30]
+set grid xtics lt 0 lw 1 lc rgb "#bbbbbb"
+set grid ytics lt 0 lw 1 lc rgb "#bbbbbb"
+set xdata time
+set timefmt "%H:%M"
+set format x "%H:%M"
+plot "/var/www/html/temp_data.dat" u 1:2 with lines smooth csplines
