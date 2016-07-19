@@ -1,6 +1,6 @@
 #!/bin/bash
 python /home/pi/bin/logger.py
-/home/pi/bin/plot_temp.sh
+/home/pi/bin/plot_temp
 
 hour=$(date +%H)
 minute=$(date +%M)
