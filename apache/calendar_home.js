@@ -15,7 +15,6 @@ var weekday = Calendar.getDay();    // Returns day (1-31)
 Calendar.setDate(1);    // Start the calendar day at '1'
 Calendar.setMonth(month);    // Start the calendar month at now
 
-
 /* VARIABLES FOR FORMATTING
 NOTE: You can format the 'BORDER', 'BGCOLOR', 'CELLPADDING', 'BORDERCOLOR'
       tags to customize your caledanr's look. */
@@ -36,9 +35,6 @@ cal += '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=10>' + TR_start;
 cal += '<TD COLSPAN="' + DAYS_OF_WEEK + '" BGCOLOR="#EFEFEF"><CENTER><B>';
 cal += month_of_year[month]  + '   ' + year + '</B>' + TD_end + TR_end;
 cal += TR_start;
-
-/////////////////////////////////////
-//   DO NOT EDIT BELOW THIS POINT  //
 
 // LOOPS FOR EACH DAY OF WEEK
 for(index=0; index < DAYS_OF_WEEK; index++)
