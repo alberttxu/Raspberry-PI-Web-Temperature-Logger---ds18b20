@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from time import strftime 
-from therm import read_temp
+from read_therm import read_temp
 
 log_file = "/var/www/html/temp_data.dat"
 
