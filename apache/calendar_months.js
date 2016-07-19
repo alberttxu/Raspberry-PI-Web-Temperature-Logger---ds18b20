@@ -1,4 +1,4 @@
-//modular bug fix
+//modular bug fix for negative numbers
 function mod(n, m) {
             return ((n % m) + m) % m;
 }
@@ -33,7 +33,6 @@ function past_month(p) {
     /* VARIABLES FOR FORMATTING
     NOTE: You can format the 'BORDER', 'BGCOLOR', 'CELLPADDING', 'BORDERCOLOR'
           tags to customize your caledanr's look. */
-
     var TR_start = '<TR>';
     var TR_end = '</TR>';
     var TD_start = '<TD WIDTH="70"><CENTER>';
@@ -48,10 +47,7 @@ function past_month(p) {
     cal += '<TD COLSPAN="' + DAYS_OF_WEEK + '" BGCOLOR="#EFEFEF"><CENTER><B>';
     cal += month_of_year[month]  + '   ' + year + '</B>' + TD_end + TR_end;
     cal += TR_start;
-
-    /////////////////////////////////////
-    //   DO NOT EDIT BELOW THIS POINT  //
-
+    
     // LOOPS FOR EACH DAY OF WEEK
     for(index=0; index < DAYS_OF_WEEK; index++)
     {
@@ -96,6 +92,6 @@ function past_month(p) {
     return cal;
 }
 
-//  PRINT CALENDAR
+//  PRINT PAST CALENDARS
 for (i = 1; i <= 12; i++)
     document.write(past_month(i));
