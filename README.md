@@ -1,6 +1,7 @@
 # Web-Temperature-Logger---ds18b20
-Create daily logs using a ds18b20 digital temperature sensor.
+Create logs using a ds18b20 digital temperature sensor.
 
-Using cron jobs, python, gnuplot, and apache to create daily graphs.
+Install python, gnuplot, and apache to create daily graphs.
 
-Personal setup on Raspberry Pi.
+Put files from apache into /var/www/html.
+Use scripts/temp_cron.sh in crontab.
